@@ -67,6 +67,10 @@ class _CalculadoraState extends State<Calculadora> {
       child: Padding(
         padding: const EdgeInsets.all(6),
         child: ElevatedButton(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: Colors.orange, // color del botón
+            foregroundColor: Colors.white,   // color del texto
+          ),
           onPressed: () => presionar(texto),
           child: Text(texto, style: const TextStyle(fontSize: 22)),
         ),
@@ -77,7 +81,11 @@ class _CalculadoraState extends State<Calculadora> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Calculadora 3')),
+      backgroundColor: Colors.grey[200], // color de fondo
+      appBar: AppBar(
+        title: const Text('Calculadora'),
+        backgroundColor: Colors.black,   // color de la barra superior
+      ),
       body: Column(
         children: [
           Container(
