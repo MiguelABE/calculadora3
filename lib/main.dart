@@ -68,7 +68,7 @@ class _CalculadoraState extends State<Calculadora> {
         padding: const EdgeInsets.all(6),
         child: ElevatedButton(
           style: ElevatedButton.styleFrom(
-            backgroundColor: Colors.orange, // color del botón
+            backgroundColor: const Color.fromARGB(223, 185, 112, 17)// color del botón
             foregroundColor: Colors.white,   // color del texto
           ),
           onPressed: () => presionar(texto),
@@ -85,7 +85,7 @@ class _CalculadoraState extends State<Calculadora> {
       appBar: AppBar(
         title: const Text('Calculadora'),
         backgroundColor: Colors.black,   // color de la barra superior
-      ),
+        foregroundColor: Color.fromARGB(255, 255, 255, 255)
       body: Column(
         children: [
           Container(
